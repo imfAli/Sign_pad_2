@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Signature Pad implemented by Nijas</title>
+  <!-- <meta name="description" content="Signature Pad -created by Nijas">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+</head>
+<body onselectstart="return false">
+  <div id="signature-pad" class="signature-pad">
+    <div class="signature-pad--body">
+      <canvas></canvas>
+    </div>
+    <div class="signature-pad--footer">
+      <div class="signature-pad--actions">
+        <div>
+          <button type="button" data-action="clear">Clear</button>
+          <button type="button" data-action="change-color">Change color</button>
+          <button type="button" data-action="undo">Undo</button>
+        </div>
+        <div>
+          <button type="button" data-action="save-svg" hidden=true></button>
+          <button type="button" data-action="save-png" hidden=true></button>
+          <button type="button" style="background-color:white"  data-action="save-jpg">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script/signature_pad.js"></script>
+  <script src="./script/app.js"></script>
+</body>
+</html>
